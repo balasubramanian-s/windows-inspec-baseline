@@ -10,6 +10,9 @@ license: Apache-2.0
 inspec_version: '>= 4.6.3'
 supports:
     - platform-family: windows
+depends:
+    - name: microsoft-windows-server-2019-stig-baseline
+      git: https://github.com/mitre/microsoft-windows-server-2019-stig-baseline.git
 attributes:
     - name: level_1_or_2
       required: false
